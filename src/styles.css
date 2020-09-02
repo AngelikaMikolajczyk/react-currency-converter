@@ -1,0 +1,79 @@
+:root {
+  --yellow: #ffc600;
+  --grey: #e7e7e7;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  background-color: #d0d0d0;
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App {
+  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  max-width: 800px;
+  background: white;
+}
+
+.App-form {
+  border: 0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-auto-rows: 1fr;
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  grid-gap: 2rem;
+  align-items: stretch;
+}
+
+.App-from-amount,
+.Select {
+  margin: 0;
+  text-align: center;
+  font-weight: 600;
+  border: 0;
+  display: block;
+}
+
+.App-from-amount:focus,
+.Select:focus {
+  outline-color: violet;
+}
+
+.App-from-amount {
+  width: 250px;
+}
+
+.Select {
+  background: none;
+  border: 0;
+  padding: 2rem;
+}
+
+.App-form > * {
+  background: var(--yellow);
+  margin: 0;
+  border-radius: 0;
+  display: grid;
+  align-content: center;
+  font-size: 3rem;
+}
